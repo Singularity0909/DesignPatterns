@@ -54,7 +54,7 @@ class Employee extends Component {
 }
 
 public class Composite {
-    public static void test() {
+    public static void main(String[] args) {
         Manager boss = new Manager("老板", "唱怒放的生命");
         Employee HR = new Employee("人力资源", "聊微信");
         Manager PM = new Manager("产品经理", "不知道干啥");
@@ -78,9 +78,5 @@ public class Composite {
         CFO.addComponent(clerk);
 
         boss.check();
-    }
-
-    public static void main(String[] args) {
-        test();
     }
 }

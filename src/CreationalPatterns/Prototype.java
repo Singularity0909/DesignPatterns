@@ -11,16 +11,12 @@ class MilkTea2 implements Cloneable {
 }
 
 public class Prototype {
-    private static void order() throws CloneNotSupportedException {
+    public static void main(String[] args) throws CloneNotSupportedException {
         MilkTea2 milkTeaOfJay = new MilkTea2();
         milkTeaOfJay.type = "原味";
         milkTeaOfJay.ice = false;
 
         MilkTea2 yourMilkTea = milkTeaOfJay.clone();
         // ...
-    }
-
-    public static void main(String[] args) throws CloneNotSupportedException {
-        order();
     }
 }

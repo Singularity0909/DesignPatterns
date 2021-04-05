@@ -34,16 +34,12 @@ class AppleFactory implements IFactory {
 }
 
 public class AbstractFactory {
-    public static void eat() {
+    public static void main(String[] args) {
         IFactory appleFactory = new AppleFactory();
         Fruit apple = appleFactory.create();
         IFactory pearFactory = new PearFactory();
         Fruit pear = pearFactory.create();
         apple.eat();
         pear.eat();
-    }
-
-    public static void main(String[] args) {
-        eat();
     }
 }

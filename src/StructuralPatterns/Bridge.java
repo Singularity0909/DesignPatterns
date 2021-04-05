@@ -70,7 +70,7 @@ class Triangle implements IShape {
 }
 
 public class Bridge {
-    public static void drawTest() {
+    public static void main(String[] args) {
         Rectangle rectangle = new Rectangle();
         rectangle.setColor(new Red());
         rectangle.draw();
@@ -82,9 +82,5 @@ public class Bridge {
         Triangle triangle = new Triangle();
         triangle.setColor(new Yellow());
         triangle.draw();
-    }
-
-    public static void main(String[] args) {
-        drawTest();
     }
 }
